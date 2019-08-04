@@ -23,5 +23,4 @@ urlpatterns = [
     url(r'^bilboard/',include('bilboard.urls')),
     url('accounts/', include('django.contrib.auth.urls')),
     url('', TemplateView.as_view(template_name='home.html'), name='home'),
-
 ]

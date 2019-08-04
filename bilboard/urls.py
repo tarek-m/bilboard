@@ -10,7 +10,8 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     url(r'^index$', views.index, name='index'),
+    # url(r'^signup/$', views.signup, name='signup'),
 
-    # url(r'^post/new/', views.post_new, name='post_new')
+ 
 
 ]

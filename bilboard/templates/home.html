@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" type="text/css" href="{% static 'bilboard/css/stylenormal.css' %}">
 </head>
 <body>
 {% block content %}
@@ -13,6 +13,13 @@
   <p>Please log in</p>
   <a href="{% url 'login' %}">login</a>
 {% endif %}
+ 
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
 {% endblock %}
 </body>
-</html>stylelog
+</html> 

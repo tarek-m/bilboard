@@ -1,22 +1,20 @@
 .show {
-  border: dotted 1px black;
+  border: dotted 2.2px black;
   padding: 5px;
   margin: 5px;
   display: inline-block;
   position: relative;
-  width: 50%;
-  left: 350px;
+  width: 800px;
+  left: 290px;
 }
 .title{
   position: relative;
   left: 620px;
 }
 body {
-  color: #551009;
-  background-image: linear-gradient(to top,  #f35c41,#e73827);
+  color: #63170f;
+  background-image: linear-gradient(to top,  #f35c41,#f32513);
 }
- 
- 
 input{
   position: relative;
   left: 400px;
@@ -27,18 +25,31 @@ input{
 }
 .button{
   background-color:#e73827;
+  color: #e28a8a;
+  height: 30px;
+  margin: 1px;
 }
-
+.title2{
+  font-weight: bold;
+  font-weight: bolder;
+}
 .author{
-  position: relative;
-  left: 550px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  font-style: italic;
+  font-size: 20px;
 }
 .date{
   padding-top: 10px;
+  font-weight: bolder;
 }
 .content{
   text-align: center;
   padding: 10px;
+  font-size: 35px;
+  color:#b40404;
 }
 
  

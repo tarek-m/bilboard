@@ -1,6 +1,6 @@
 body {
-  color: rgb(109, 54, 14);
-  background-image: linear-gradient(to top,  rgba(255, 102, 0, 0.459),rgb(255, 102, 0, 0.8));
+
+  background-image: linear-gradient(to top,  #f35c41,#f32513);
 }
 
 input{
@@ -10,6 +10,9 @@ input{
   height: 30px;
   background-color: rgb(245, 245, 244);
   border: 1px solid black;
+}
+label{
+  color: #5e130a;
 }
 .button{
   
