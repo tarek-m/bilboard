@@ -1,11 +1,10 @@
 body {
-  color: #5e130a;
+  color: #0f0504;
   font-size:15px;
   text-align: center;
   
-  background-image: linear-gradient(to top,  #f35c41,#f32513);
+  background-image: linear-gradient(to right,rgb(57, 66, 184), rgb(180, 54, 159) );
 }
-
 input{
   position: relative;
   left: 100px;
@@ -14,11 +13,12 @@ input{
   background-color: rgb(245, 245, 244);
   border: 1px solid black;
 }
+
 label{
-  color: #5e130a;
+  color: #000000;
 }
 .button{
   
-  background-color: rgb(109, 54, 14);
+  background-color: rgb(11, 6, 14);
 }
  
