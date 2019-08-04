@@ -12,8 +12,8 @@
   left: 620px;
 }
 body {
-  color: rgb(109, 54, 14);
-  background-image: linear-gradient(to top,  rgba(255, 102, 0, 0.459),rgb(255, 102, 0, 0.8));
+  color: #551009;
+  background-image: linear-gradient(to top,  #f35c41,#e73827);
 }
  
  
@@ -26,7 +26,7 @@ input{
   border: 1px solid black;
 }
 .button{
-  background-color: rgb(109, 54, 14);
+  background-color:#e73827;
 }
 
 .author{
