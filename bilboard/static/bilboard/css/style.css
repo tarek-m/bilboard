@@ -1,45 +1,56 @@
 .show {
-  border: dotted 2.2px black;
+  
   padding: 5px;
   margin: 5px;
   display: inline-block;
   position: relative;
   width: 800px;
   left: 290px;
+  border-left: 6px solid ;
+  border-bottom: 6px solid ;
+  border-image: linear-gradient(250deg, rgb(238, 92, 214),rgb(93, 102, 218) ) 1;
+    background-color: lightgrey;
+    height: auto;
 }
 .title{
   position: relative;
-  left: 620px;
+  left: 620px;  
+  color:#320958a2;
 }
 body {
-  color: #63170f;
-  background-image: linear-gradient(to top,  #f35c41,#f32513);
+  color: #241127fd;
+  margin: 0px;    
+  background-image: linear-gradient(to right,rgb(57, 66, 184), rgb(180, 54, 159) );
 }
 input{
+  text-align: center;
   position: relative;
   left: 400px;
   width: 600px;
   height: 30px;
-  background-color: rgb(245, 245, 244);
+  background-color: rgb(255, 255, 255);
   border: 1px solid black;
 }
 .button{
-  background-color:#e73827;
-  color: #e28a8a;
+  background-color:#662fbe;
+  color: #cd8ae2;
   height: 30px;
   margin: 1px;
 }
 .title2{
-  font-weight: bold;
-  font-weight: bolder;
+  font-style: italic;
+   
+  font-size: 25px;
 }
 .author{
   font-weight: bold;
   position: absolute;
   right: 10px;
   bottom: 0px;
+  margin-top: 5px;
   font-style: italic;
   font-size: 20px;
+  color: #5a4e5cfd;
 }
 .date{
   padding-top: 10px;
@@ -49,7 +60,9 @@ input{
   text-align: center;
   padding: 10px;
   font-size: 35px;
-  color:#b40404;
+  width: 100%;
+  color:#7757aa;
+ 
 }
 
  

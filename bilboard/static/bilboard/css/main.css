@@ -119,7 +119,9 @@ textarea:-ms-input-placeholder { color: #999999; }
 button {
 	outline: none !important;
 	border: none;
-	background: transparent;
+  background-color: #57b846;
+  border-radius: 25px;
+  width: 150px;
 }
 
 button:hover {
@@ -303,6 +305,7 @@ iframe {
   transition: all 0.4s;
 }
 
+ 
 .input100:focus + .focus-input100 + .symbol-input100 {
   color: #57b846;
   padding-left: 28px;

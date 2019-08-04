@@ -11,7 +11,7 @@
 <body>
   {% block content %}
   {% if user.is_authenticated %}
-  Hi {{ user.username }}!
+  <strong >Hi {{ user.username }}!</strong>
   <p><a href="{% url 'logout' %}">logout</a></p>
   {% else %}
   <p>Please login</p>
@@ -23,8 +23,8 @@
     {% csrf_token %}
 
     <input type="text" name="post_title" placeholder="Title" /><br>
-    <input type="text" name="post_content" placeholder="Your message here" /><br>
-    <input type="text" name="post_author" placeholder="Author" /><br>
+    <input type="text" name="post_content" placeholder="Message" /><br>
+    <input type="text" name="post_author" placeholder="Name" /><br>
     <input type="submit" class="button" value="Submit" />
   </form>
   </div>
@@ -41,7 +41,7 @@
   </div>
   {% endfor %}
 
-  <script src="{% static 'bilboard/js/main.css' %}"></script>
+  <!-- <script src="{% static 'bilboard/js/main.css' %}"></script> -->
 </body>
 
 </html>
