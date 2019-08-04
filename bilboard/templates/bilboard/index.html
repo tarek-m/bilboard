@@ -1,0 +1,47 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'bilboard/css/style.css' %}">
+</head>
+
+<body>
+  {% block content %}
+  {% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  <p><a href="{% url 'logout' %}">logout</a></p>
+  {% else %}
+  <p>Please login</p>
+  <a href="{% url 'login' %}">login</a>
+  {% endif %}
+  {% endblock %}
+  <h1 class="title">Bilboard</h1>
+  <form action="index" method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="post_title" placeholder="Title" /><br>
+    <input type="text" name="post_content" placeholder="Your message here" /><br>
+    <input type="text" name="post_author" placeholder="Author" /><br>
+    <input type="submit" class="button" value="Submit" />
+  </form>
+  </div>
+  
+  {% for entry in Post_template %}
+  <div class="show">
+
+    <div class="title2">{{ entry.post_title }}</div>
+    <div class="date">{{ entry.pub_date }}</div>
+    <div class="content">{{ entry.post_content }}</div>
+    <div class="author">{{ entry.post_author }}</div>
+
+
+  </div>
+  {% endfor %}
+
+  <script src="{% static 'bilboard/js/main.css' %}"></script>
+</body>
+
+</html>
